@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Femi ❤️ Christ'aime</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color:white;
+    text-align:center;
+}
+
+.page{
+    display:none;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.active{
+    display:block;
+}
+
+img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-top:30px;
+}
+
+button{
+    margin-top:40px;
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4d6d;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff4d6d;
+    color:white;
+}
+
+h1{
+    font-size:32px;
+}
+
+p{
+    font-size:20px;
+    max-width:600px;
+    margin:20px auto;
+}
+
+.hearts{
+    font-size:28px;
+    line-height:1.8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+    <h1>Je t’aime Christ’aime ❤️</h1>
+    <img src="christaime.jpg" alt="Christ'aime">
+    <p>
+        Mon amour, ma future femme 💍  
+        Tu es la lumière de ma vie,  
+        celle qui fait battre mon cœur plus fort chaque jour.  
+        Depuis ce 11 décembre, ma vie a changé grâce à toi.
+    </p>
+    <button onclick="nextPage(1)">Suivant ➜</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+    <h1>Pourquoi ce site ? 💖</h1>
+    <p>
+        L’idée de ce site est simple…  
+        Immortaliser l’amour entre Femi et Christ’aime ❤️  
+        Une pensée spéciale pour la meilleure petite amie au monde.  
+        Parce que notre histoire mérite d’être écrite, même en code.
+    </p>
+    <button onclick="nextPage(2)">Suivant ➜</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+    <h1>Tu es importante dans ma vie 💕</h1>
+    <div class="hearts">
+        ❤️💋❤️💋❤️💋❤️💋❤️💋  
+        Tu es importante dans ma vie  
+        ❤️💋❤️💋❤️💋❤️💋❤️💋  
+        Mon bonheur, ma douceur, mon avenir  
+        ❤️💋❤️💋❤️💋❤️💋❤️💋  
+        Je t’aime infiniment  
+        ❤️💋❤️💋❤️💋❤️💋❤️💋
+    </div>
+    <button onclick="nextPage(3)">Suivant ➜</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+    <h1>Message Final 💍</h1>
+    <p>
+        Christ’aime,  
+        Cela fait un an et quelques mois que nous sommes ensemble  
+        depuis ce 11 décembre qui a changé ma vie.  
+
+        Tu n’es pas seulement ma copine.  
+        Tu es ma future femme, mon projet, mon choix pour la vie.  
+
+        Merci d’exister.  
+        Merci de m’aimer.  
+        Merci de faire de moi un homme meilleur.  
+
+        Je veux continuer à écrire notre histoire,  
+        pas seulement sur ce site…  
+        mais pour toute la vie.  
+
+        Je t’aime aujourd’hui, demain, et pour toujours. ❤️
+    </p>
+</div>
+
+<script>
+function nextPage(current){
+    document.getElementById("page"+current).classList.remove("active");
+    document.getElementById("page"+(current+1)).classList.add("active");
+}
+</script>
+
+</body>
+</html>
